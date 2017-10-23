@@ -35,6 +35,7 @@ function draw() {
 
       // start our iteration
       // original a and b
+      // substiture for c, the complex number in zz + c
       var ca = a;
       var cb = b;
 
@@ -55,7 +56,7 @@ function draw() {
 
         // what does it mean to be unbounded - tend toward infiniti
         // pretend 16 is our infiinity - break out of it
-        if (abs(aa + bb > 16)) {
+        if (abs(aa + bb > 25)) {
           break;
         }
         n++;
@@ -68,6 +69,7 @@ function draw() {
       // }
       // if n gets to max iterations
       if (n == maxIterations) {
+        // n got to the max iterations = brightness will be 0 black
         bright = 0;
       }
 
